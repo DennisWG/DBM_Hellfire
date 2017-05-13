@@ -19,8 +19,8 @@ Moroes:AddBarOption("Vanish")
 Moroes:RegisterCombat("YELL", DBM_MOROES_YELL_START);
 
 function Moroes:OnCombatStart(delay)
-	self:StartStatusBarTimer(33, "Vanish", "Interface\\Icons\\Ability_Vanish");
-	self:ScheduleSelf(33, "SoonWarning");
+	self:StartStatusBarTimer(30, "Vanish", "Interface\\Icons\\Ability_Vanish");
+	self:ScheduleSelf(27, "SoonWarning");
 end
 
 function Moroes:OnEvent(event, arg1)	

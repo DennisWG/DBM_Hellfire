@@ -92,9 +92,9 @@ function Maulgar:OnSync(msg)
 		if self.Options.WarnWW then
 			self:Announce(DBM_MAULGAR_WARN_WHIRLWIND, 3);
 		end
-		self:StartStatusBarTimer(55, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
+		self:StartStatusBarTimer(30, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
 		self:StartStatusBarTimer(15.2, "Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
-		self:ScheduleSelf(51, "WhirlwindWarning");
+		self:ScheduleSelf(26, "WhirlwindWarning");
 	elseif msg == "Felhunter" then
 		if self.Options.WarnFelhunter then
 			self:Announce(DBM_MAULGAR_WARN_FELHUNTER, 2);

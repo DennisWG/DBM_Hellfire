@@ -25,8 +25,8 @@ Netherspite:AddBarOption("Netherbreath")
 
 function Netherspite:OnCombatStart(delay)
 	self.Phase = 1;
-	self:StartStatusBarTimer(62 - delay, "Portal Phase", "Interface\\Icons\\Spell_Arcane_PortalIronForge");
-	self:ScheduleSelf(57 - delay, "PhaseWarning", 2);
+	self:StartStatusBarTimer(60 - delay, "Portal Phase", "Interface\\Icons\\Spell_Arcane_PortalIronForge");
+	self:ScheduleSelf(55 - delay, "PhaseWarning", 2);
 	
 	self:StartStatusBarTimer(540 - delay, "Enrage", "Interface\\Icons\\Spell_Shadow_UnholyFrenzy");
 	self:ScheduleSelf(240 - delay, "EnrageWarn", 300);
@@ -58,8 +58,8 @@ function Netherspite:OnEvent(event, arg1)
 		if arg1 == DBM_NS_EMOTE_PHASE_2 then
 			self.Phase = 2;
 			self:EndStatusBarTimer("Portal Phase");
-			self:StartStatusBarTimer(31, "Banish Phase", "Interface\\Icons\\Spell_Shadow_Cripple");
-			self:ScheduleSelf(26, "PhaseWarning", 1);
+			self:StartStatusBarTimer(30, "Banish Phase", "Interface\\Icons\\Spell_Shadow_Cripple");
+			self:ScheduleSelf(25, "PhaseWarning", 1);
 			
 			if self.Options.PhaseWarn then
 				self:Announce(DBM_NS_WARN_BANISH, 3);
@@ -67,8 +67,8 @@ function Netherspite:OnEvent(event, arg1)
 		elseif arg1 == DBM_NS_EMOTE_PHASE_1 then
 			self.Phase = 1;
 			self:EndStatusBarTimer("Banish Phase");
-			self:StartStatusBarTimer(61.5, "Portal Phase", "Interface\\Icons\\Spell_Arcane_PortalIronForge");
-			self:ScheduleSelf(56.5, "PhaseWarning", 2);
+			self:StartStatusBarTimer(60, "Portal Phase", "Interface\\Icons\\Spell_Arcane_PortalIronForge");
+			self:ScheduleSelf(55, "PhaseWarning", 2);
 			
 			if self.Options.PhaseWarn then
 				self:Announce(DBM_NS_WARN_PORTAL, 3);

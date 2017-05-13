@@ -27,10 +27,10 @@ Gruul:AddBarOption("Silence")
 
 function Gruul:OnCombatStart(delay)
 	self.Grows = 0;	
-	self:ScheduleSelf(104 - delay, "SilenceSoon");
-	self:StartStatusBarTimer(108 - delay, "Silence", "Interface\\Icons\\Spell_Holy_ImprovedResistanceAuras");	
-	self:ScheduleSelf(33 - delay, "SlamSoon");
-	self:StartStatusBarTimer(38 - delay, "Ground Slam", "Interface\\Icons\\Spell_Nature_ThunderClap");	
+	self:ScheduleSelf(101 - delay, "SilenceSoon");
+	self:StartStatusBarTimer(105 - delay, "Silence", "Interface\\Icons\\Spell_Holy_ImprovedResistanceAuras");	
+	self:ScheduleSelf(31 - delay, "SlamSoon");
+	self:StartStatusBarTimer(35 - delay, "Ground Slam", "Interface\\Icons\\Spell_Nature_ThunderClap");	
 	self:StartStatusBarTimer(30 - delay, "Grow #1", "Interface\\Icons\\Spell_Nature_ShamanRage", true);
 
 	if self.Options.RangeCheck then

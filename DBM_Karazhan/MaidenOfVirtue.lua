@@ -27,8 +27,8 @@ Maiden:RegisterCombat("YELL", DBM_MOV_YELL_PULL);
 
 function Maiden:OnCombatStart()
 	self:EndStatusBarTimer("Repentance");
-	self:StartStatusBarTimer(45, "Next Repentance", "Interface\\Icons\\Spell_Holy_PrayerOfHealing");
-	self:ScheduleSelf(40, "RepWarning");
+	self:StartStatusBarTimer(30, "Next possible Repentance", "Interface\\Icons\\Spell_Holy_PrayerOfHealing");
+	self:ScheduleSelf(28, "RepWarning");
 	
 	if self.Options.RangeCheck then
 		DBM_Gui_DistanceFrame_Show();
@@ -60,10 +60,10 @@ end
 function Maiden:OnSync(msg)
 	if msg == "Rep" then
 		self:Announce(DBM_MOV_WARN_REP, 3);
-		self:EndStatusBarTimer("Next Repentance");
+		self:EndStatusBarTimer("Next possible Repentance");
 		self:UnScheduleSelf("RepWarning");
-		self:StartStatusBarTimer(33, "Next Repentance", "Interface\\Icons\\Spell_Holy_PrayerOfHealing");
+		self:StartStatusBarTimer(30, "Next possible Repentance", "Interface\\Icons\\Spell_Holy_PrayerOfHealing");
 		self:StartStatusBarTimer(12, "Repentance", "Interface\\Icons\\Spell_Holy_PrayerOfHealing");
-		self:ScheduleSelf(29, "RepWarning");
+		self:ScheduleSelf(28, "RepWarning");
 	end
 end

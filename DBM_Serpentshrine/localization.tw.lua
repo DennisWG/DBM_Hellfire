@@ -34,8 +34,8 @@ DBM_HYDROSS_TOMB_WARN		= "*** >%s< 受到了水之墳 ***";
 DBM_SBT["Enrage"] 		= "狂怒";
 DBM_SBT["Water Tomb"] 		= "水之墳";
 DBM_SBT["Hydross"] = {
-	{"Mark of Hydross #", "冰霜印記 #"},
-	{"Mark of Corruption #", "自然印記 #"},
+		 [1] = {"Mark of Hydross #", "冰霜印記 #"},
+		 [2] = {"Mark of Corruption #", "自然印記 #"},
 }
 
 -- Morogrim Tidewalker
@@ -193,7 +193,7 @@ DBM_SBT["Tainted Elemental"] 		= "污染的元素";
 DBM_SBT["Naga"] 			= "盤牙精英";
 DBM_SBT["Enrage"] 			= "狂怒";
 DBM_SBT["Vashj"] = {
-	{"Static Charge: (.*)", "靜電衝鋒: %1"},
+	[1] = {"Static Charge: (.*)", "靜電衝鋒: %1"},
 };
 
 end

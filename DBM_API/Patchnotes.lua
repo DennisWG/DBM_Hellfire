@@ -1,16 +1,50 @@
 ﻿DBM_PN = {
 	["en"] = {
-		[322] = {
-			"localization/ruRU: added basic support for russian clients",
-			"Sunwell/Kalecgos: fixed a bug that could cause the spectral realm frame to stick to your cursor",
-			"Sunwell/Kalecgos: the spectral realm frame will now remember its position",
-			"Sunwell/Eredar Twins: added a sound warning for conflag (PVPFlagTaken + HoodWolfTransformPlayer01 (\"Run away little girl!\"))",
-			"cleaned up some localization files by removing old unused strings",
-			"some minor tweaks and bug fixes"
+		[310] = {
+			"updated for patch 2.4.0, but most mods are untested! So there might be bugs",
+			"updated old boss mods to work with the new combat log system",
+			"added Sunwell boss mods",
+			"you can now disable the flash effects in Battlegrounds",
+			"Black Temple/Illidan: added warning and timer for \"Caged\" in phase 4",
+			":StartStatusBarTimer() now accepts spellIds as texture",
 		},
-		[321] = {
-			"updated the void reaver mod",
-		}
+		[303] = {
+			"v3.03",
+			"you can now use % t in /dbm timer and /dbm broadcast timer",
+			"the toc field X-DBM-LoadZone now supports multiple zones",
+			"the sync code now supports non-raid boss mods",
+			"increased default bar limit to 15",
+			"some minor bug fixes",
+			"removed the mod DBM_Other",
+			"added DBM_Azeroth and DBM_Outlands",
+			"Illidan: added timer for Shadow Prison",
+			"Illidan: added timer and warning for phase 4 enrage",
+			"Battlegrounds: fixed some cross-server sync issues",
+			"Battlegrounds: changed sync code, DBM 3.02c will not sync with older versions in BGs",
+			"Battlegrounds: added auto-release spirit option (disabled by default)",
+			"Battlegrounds: re-enabled the blue flash effect",
+			"Illidari Council: added time for divine wrath",
+			"Bloodboil: added optional Arcing Smash announce",
+			"updated deDE localization",
+			" ",
+			" ",
+		},
+		[302] = {
+			"v3.02",
+			"fixed some 2.3 issues",
+			"Zul'Aman/Zul'jin: Added more warnings",
+			"Zul'Aman/Malacrass: Updated/changed warnings/timer",
+			"Zul'Aman/localizations: Updated zhTW/deDE localizations",
+			"Battlegrounds: Fixed score frame error messages and AV timers",
+			"Al'ar: Timers in phase 1 should work again",
+			" ",
+			" ",
+		},
+		[301] = {
+			"v3.01",
+			"Quick update for WoW 2.3",
+			"Added Zul'Aman mods"
+		},
 	},
 }
 

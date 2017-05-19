@@ -82,7 +82,7 @@ DBM_SBT["Enrage"] 				= "狂怒";
 DBM_SBT["Next Platform"] 			= "下一個平台";
 DBM_SBT["Meteor"] 				= "隕石術";
 DBM_SBT["Alar"] = {
-	{"Melt Armor: (.*)","熔化護甲: %1"},
+	[1] = {"Melt Armor: (.*)","熔化護甲: %1"},
 };
 
 -- Kael'thas
@@ -224,8 +224,8 @@ DBM_SBT["Phase 3"] 				= "第三階段";
 DBM_SBT["Phase 4"] 				= "第四階段";
 DBM_SBT["Gaze Cooldown"] 				= "凝視冷卻";
 DBM_SBT["KaelThas"] = {
-	{"Conflagration: (.*)","燃燒: %1"},
-	{"Remote Toy: (.*)","遙控玩具: %1"},
+	[1] = {"Conflagration: (.*)","燃燒: %1"},
+	[2] = {"Remote Toy: (.*)","遙控玩具: %1"},
 };
 
 end

@@ -86,8 +86,8 @@ DBM_GOREFIEND_WARN_INCINERATE			= "*** 燒盡: >%s< ***";
 DBM_GOREFIEND_SPECWARN_SOD			= "死亡之影";
 
 DBM_SBT["TeronGorefiend"] = {
-	{"Vengeful Spirit: (.*)", "復仇靈魂: %1"},
-	{"Shadow of Death: (.*)", "死亡之影: %1"},
+	[1] = {"Vengeful Spirit: (.*)", "復仇靈魂: %1"},
+	[2] = {"Shadow of Death: (.*)", "死亡之影: %1"},
 };
 
 -- Bloodboil
@@ -112,12 +112,10 @@ DBM_BLOODBOIL_WARN_SMASH			= "*** 圓弧斬 ***";
 DBM_BLOODBOIL_WARN_SMASH_SOON			= "*** 即將發動圓弧斬 ***";
 
 DBM_SBT["Enrage"] 				= "狂怒";
+DBM_SBT["Bloodboil"] 				= "血液沸騰";
 DBM_SBT["Fel Rage"] 				= "惡魔之怒";
+DBM_SBT["Normal Phase"] 			= "普通階段";
 DBM_SBT["Arcing Smash"] 			= "圓弧斬";
-DBM_SBT["Bloodboil"] = {
-	{"Normal Phase", "普通階段"},
-	{"Bloodboil", "血液沸騰"},
-}
 
 -- Essence (Reliquary) of Souls
 DBM_SOULS_NAME					= "靈魂精華"
@@ -173,7 +171,7 @@ DBM_SBT["Rune Shield"]				= "符文護盾"
 DBM_SBT["Deaden"]				= "麻木"
 DBM_SBT["Soul Scream"]				= "靈魂尖嘯"
 DBM_SBT["Souls"] = {
-	{"Fixate: (.*)", "凝視: %1"},
+	[1] = {"Fixate: (.*)", "凝視: %1"},
 }
 
 -- Mother Shahraz
@@ -267,8 +265,8 @@ DBM_SBT["Vanish"] 				= "消失";
 DBM_SBT["Devotion Aura"] 			= "虔誠光環";
 DBM_SBT["Resistance Aura"] 			= "多重抗性光環";
 DBM_SBT["Council"] = {
-	{"Spell Shield: (.*)", "法術護盾: %1"},
-	{"Melee Shield: (.*)", "物理護盾: %1"},
+		 [1] = {"Spell Shield: (.*)", "法術護盾: %1"},
+		 [2] = {"Melee Shield: (.*)", "物理護盾: %1"},
 }
 
 -- Illidan Stormrage
@@ -343,15 +341,16 @@ DBM_SBT["Illidan Stormrage"]			= "伊利丹·怒風";
 DBM_SBT["Next Eye Blast"]			= "下一次暗眼衝擊波"; --not using now
 DBM_SBT["Next Dark Barrage"]			= "下一次黑暗侵襲";
 DBM_SBT["Demon Phase"]				= "惡魔階段";
+--DBM_SBT["Normal Phase"]			= "人形階段";	--interact with Bloodboil
 DBM_SBT["Shadow Demons"]			= "暗影惡魔";
 DBM_SBT["Next Flame Burst"]			= "下一次烈焰爆擊";
 DBM_SBT["Shadow Prison"]			= "暗影之牢";
 DBM_SBT["Enrage2"]				= "激怒" -- you cannot have two timers with the same id, so the 2nd enrage bar needs a "localization"
 DBM_SBT["Illidan"] = {
-	{"Shear: (.*)", "銳減: %1"},
-	{"Shadowfiend: (.*)", "寄生暗影惡魔: %1"},
-	{"Dark Barrage: (.*)", "黑暗侵襲: %1"},
-	{"Flames: (.*)", "苦惱之焰: %1"},
-	{"Normal Phase", "人形階段"},
+		 [1] = {"Shear: (.*)", "銳減: %1"},
+		 [2] = {"Shadowfiend: (.*)", "寄生暗影惡魔: %1"},
+		 [3] = {"Dark Barrage: (.*)", "黑暗侵襲: %1"},
+		 [4] = {"Flames: (.*)", "苦惱之焰: %1"},
+		 [5] = {"Normal Phase", "人形階段"},
 }
 end

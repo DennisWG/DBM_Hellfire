@@ -11,6 +11,9 @@ DBM_NAJENTUS_OPTION_RANGECHECK		= "Show range check frame";
 DBM_NAJENTUS_OPTION_FRAME			= "Show players with less than 8500 health";
 
 DBM_NAJENTUS_YELL_PULL				= "You will die in the name of Lady Vashj!";
+DBM_NAJENTUS_DEBUFF_SPINE			= "([^%s]+) (%w+) afflicted by Impaling Spine.";
+DBM_NAJENTUS_DEBUFF_SHIELD			= "High Warlord Naj'entus is afflicted by Tidal Shield.";
+DBM_NAJENTUS_FADE_SHIELD			= "Tidal Shield fades from High Warlord Naj'entus.";
 
 DBM_NAJENTUS_WARN_SPINE				= "*** Impaling Spine on >%s< ***";
 DBM_NAJENTUS_WARN_ENRAGE			= "*** Enrage in %s %s ***";
@@ -34,6 +37,8 @@ DBM_SUPREMUS_OPTION_TARGETWHISPER	= "Send whisper to Supremus' target";
 DBM_SUPREMUS_EMOTE_PHASE1			= "punches the ground in anger!";
 DBM_SUPREMUS_EMOTE_PHASE2			= "The ground begins to crack open!";
 DBM_SUPREMUS_EMOTE_NEWTARGET		= "acquires a new target";
+DBM_SUPREMUS_DEBUFF_FIRE			= "You are afflicted by Molten Fire.";
+DBM_SUPREMUS_DEBUFF_VOLCANO			= "You are afflicted by Volcanic Geyser.";
 
 DBM_SUPREMUS_WARN_KITE_TARGET		= "Target: >%s<";
 DBM_SUPREMUS_WARN_PHASE_1_SOON		= "*** Tank & Spank phase in 10 sec ***";
@@ -64,6 +69,8 @@ DBM_GOREFIEND_DESCRIPTION			= "Announces Shadow of Death and Incinerate.";
 DBM_GOREFIEND_OPTION_INCINERATE		= "Announce incinerate";
 
 DBM_GOREFIEND_YELL_PULL				= "Vengeance is mine!";
+DBM_GOREFIEND_DEBUFF_SOD			= "([^%s]+) (%w+) afflicted by Shadow of Death%.";
+DBM_GOREFIEND_DEBUFF_INCINERATE		= "([^%s]+) (%w+) afflicted by Incinerate%.";
 
 DBM_GOREFIEND_WARN_SOD				= "*** Shadow of Death: >%s< ***";
 DBM_GOREFIEND_WARN_INCINERATE		= "*** Incinerate: >%s< ***";
@@ -76,6 +83,11 @@ DBM_BLOODBOIL_DESCRIPTION			= "Announces Bloodboil and Fel Rage.";
 DBM_BLOODBOIL_OPTION_SMASH			= "Announce Arcing Smash";
 
 DBM_BLOODBOIL_YELL_PULL				= "Horde will... crush you.";
+DBM_BLOODBOIL_DEBUFF_BLOODBOIL		= "afflicted by Bloodboil";
+DBM_BLOODBOIL_GAIN_FEL_RAGE			= "Gurtogg Bloodboil gains Fel Rage.";
+DBM_BLOODBOIL_FADE_FEL_RAGE			= "Fel Rage fades from Gurtogg Bloodboil.";
+DBM_BLOODBOIL_DEBUFF_FEL_RAGE		= "([^%s]+) (%w+) afflicted by Fel Rage%.";
+DBM_BLOODBOIL_DEBUFF_SMASH			= "([^%s]+) (%w+) afflicted by Arcing Smash%.";
 
 DBM_BLOODBOIL_WARN_BLOODBOIL		= "*** Bloodboil #%s ***";
 DBM_BLOODBOIL_WARN_ENRAGE			= "*** Enrage in %s %s ***";
@@ -102,11 +114,16 @@ DBM_SOULS_BOSS_DESIRE				= "Essence of Desire"
 DBM_SOULS_BOSS_KILL_NAME			= "Essence of Anger"
 DBM_SOULS_YELL_PULL					= "Pain and suffering are all that await you!" -- Essence of Suffering
 DBM_SOULS_EMOTE_ENRAGE				= "%s becomes enraged!"
+DBM_SOULS_GAIN_RUNESHIELD			= "Essence of Desire gains Rune Shield."
+DBM_SOULS_CAST_SPIRIT_SHOCK			= "Essence of Desire begins to cast Spirit Shock."
+DBM_SOULS_CAST_DEADEN				= "Essence of Desire begins to cast Deaden."
+DBM_SOULS_CAST_SOULDRAIN			= "Essence of Suffering begins to cast Soul Drain."
 DBM_SOULS_YELL_DESIRE				= "You can have anything you desire... for a price."
 DBM_SOULS_YELL_DESIRE_DEMONIC		= "Shi shi rikk rukadare shi tichar kar x gular"
 DBM_SOULS_DEBUFF_SPITE				= "([^%s]+) (%w+) afflicted by Spite%."
 DBM_SOULS_DEBUFF_SOULDRAIN			= "([^%s]+) (%w+) afflicted by Soul Drain%."
 DBM_SOULS_DEBUFF_FIXATE				= "([^%s]+) (%w+) afflicted by Fixate%."
+DBM_SOULS_CAST_SOULSCREAM			= "Essence of Anger%s?'s Soul Scream hits"
 DBM_SOULS_YELL_ANGER_INC			= "Beware: I live!"
 
 DBM_SOULS_WARN_ENRAGE_SOON			= "*** Enrage soon ***"
@@ -135,6 +152,11 @@ DBM_SHAHRAZ_OPTION_BEAM				= "Announce Beams"
 DBM_SHAHRAZ_OPTION_BEAM_SOON		= "Show \"Beam soon\" warning"
 
 DBM_SHAHRAZ_YELL_PULL				= "So... business or pleasure?"
+DBM_SHAHRAZ_AFFLICT_FA				= "([^%s]+) (%w+) afflicted by Fatal Attraction%."
+DBM_SHAHRAZ_BEAM_VILE				= "afflicted by Vile Beam"
+DBM_SHAHRAZ_BEAM_SINISTER			= "Mother Shahraz%s?'s Sinister Beam"
+DBM_SHAHRAZ_BEAM_SINFUL				= "Mother Shahraz%s?'s Sinful Beam"
+DBM_SHAHRAZ_BEAM_WICKED				= "Mother Shahraz%s?'s Wicked Beam"
 
 DBM_SHAHRAZ_WARN_ENRAGE				= "*** Enrage in %s %s ***"
 DBM_SHAHRAZ_WARN_FA					= "*** Fatal Attraction on %s ***"
@@ -176,6 +198,20 @@ DBM_COUNCIL_YELL_PULL2				= "You wish to test me?"
 DBM_COUNCIL_YELL_PULL3				= "I have better things to do..."
 DBM_COUNCIL_YELL_PULL4				= "Flee or die!"
 
+DBM_COUNCIL_CAST_DW					= "Lady Malande begins to cast Divine Wrath." 
+DBM_COUNCIL_CAST_COH				= "Lady Malande begins to cast Circle of Healing."
+DBM_COUNCIL_HEAL_COH				= "Lady Malande%s?'s Circle of Healing heal"
+DBM_COUNCIL_INTERRUPT_COH			= "interrupts Lady Malande%s?'s Circle of Healing"
+DBM_COUNCIL_BUFF_VANISH				= "Veras Darkshadow gains Vanish."
+DBM_COUNCIL_FADE_VANISH				= "Vanish fades from Veras Darkshadow."
+DBM_COUNCIL_DEBUFF_POISON			= "([^%s]+) (%w+) afflicted by Deadly Poison"
+DBM_COUNCIL_BUFF_SPELLWARD			= "(.-) gains Blessing of Spell Warding."
+DBM_COUNCIL_BUFF_PROTECTION			= "(.-) gains Blessing of Protection."
+DBM_COUNCIL_BUFF_SHIELD				= "Lady Malande gains Reflective Shield."
+DBM_COUNCIL_DEBUFF_WRATH			= "([^%s]+) (%w+) afflicted by Divine Wrath"
+DBM_COUNCIL_BUFF_DEV_AURA			= "gains Devotion Aura."
+DBM_COUNCIL_BUFF_RES_AURA			= "gains Chromatic Resistance Aura."
+
 DBM_COUNCIL_WARN_CAST_COH			= "Circle of Healing"
 DBM_COUNCIL_WARN_POISON				= "Deadly Poison on >%s<"
 DBM_COUNCIL_WARN_SHIELD_NORMAL		= "Reflective Shield"
@@ -207,13 +243,23 @@ DBM_ILLIDAN_OPTION_SHADOWDEMONS		= "Announce Shadow Demons"
 DBM_ILLIDAN_OPTION_EYEBEAMSOON		= "Show \"Eye Blast soon\" warning"
 
 DBM_ILLIDAN_YELL_PULL				= "The time has come! The moment is at hand!"
+DBM_ILLIDAN_DEBUFF_SHEAR			= "([^%s]+) (%w+) afflicted by Shear"
+DBM_ILLIDAN_DEBUFF_SHADOWFIEND		= "([^%s]+) (%w+) afflicted by Parasitic Shadowfiend"
+DBM_ILLIDAN_DEBUFF_DARKBARRAGE		= "([^%s]+) (%w+) afflicted by Dark Barrage"
 DBM_ILLIDAN_YELL_EYEBEAM			= "Stare into the eyes of the Betrayer!"
+DBM_ILLIDAN_DEBUFF_FLAMES			= "([^%s]+) (%w+) afflicted by Agonizing Flames"
+DBM_ILLIDAN_CAST_PHASE2				= "Blade of Azzinoth casts Summon Tear of Azzinoth."
 DBM_ILLIDAN_YELL_DEMONFORM			= "Behold the power... of the demon within!"
 DBM_ILLIDAN_YELL_PHASE4				= "Is this it, mortals? Is this all the fury you can muster?"
 DBM_ILLIDAN_MOB_FLAME				= "Flame of Azzinoth"
+DBM_ILLIDAN_CAST_FLAMEBURST			= "Flame Burst hits ([^%s]+)"
+DBM_ILLIDAN_CAST_SHADOWDEMS			= "Illidan Stormrage begins to cast Summon Shadow Demons." -- nobody should be in range for this event (damage aura)
 DBM_ILLIDAN_SPELL_SHADOWDEMONS		= "Summon Shadow Demons"
 DBM_ILLIDAN_SPELL_SHEAR				= "Shear"
 DBM_ILLIDAN_YELL_START				= "Akama. Your duplicity is hardly surprising. I should have slaughtered you and your malformed brethren long ago."
+DBM_ILLIDAN_DEBUFF_DEMON			= "([^%s]+) (%w+) afflicted by Paralyze"
+DBM_ILLIDAN_DEBUFF_PRISON			= "You are afflicted by Shadow Prison."
+DBM_ILLIDAN_GAIN_ENRAGE				= "Illidan Stormrage gains Enrage."
 
 DBM_ILLIDAN_WARN_SHEAR				= "Shear on >%s<"
 DBM_ILLIDAN_WARN_SHADOWFIEND		= "Shadowfiend on >%s<"

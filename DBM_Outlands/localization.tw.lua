@@ -52,7 +52,7 @@ DBM_SBT["Prayer of Healing"]		= "治療禱言";
 DBM_SBT["Heal"]				= "補血";
 DBM_SBT["Felhunter"]			= "野生地獄行者";
 DBM_SBT["Maulgar"] = {
-	{"Spell Shield: (.*)","法術護盾: %1"},
+	[1] = {"Spell Shield: (.*)","法術護盾: %1"},
 };
 
 -- Gruul
@@ -89,7 +89,7 @@ DBM_SBT["Silence"]			= "沉默";
 DBM_SBT["Grow #1"]			= "成長 #1";
 	
 DBM_SBT["Gruul"] = {
-	{"Grow #", "成長 #"},
+		 [1] = {"Grow #", "成長 #"},
 }
 
 -- LordKazzak

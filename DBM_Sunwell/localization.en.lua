@@ -26,7 +26,7 @@ DBM_KAL_OPTION_STRIKE			= "Announce Corrupting Strike"
 DBM_KAL_OPTION_FRAME			= "Show health frame"
 
 DBM_KAL_SPELLID_BREATH			= 44799
-DBM_KAL_SPELLIDS_WM				= { -- DO NOT TRANSLATE (should be moved to kalecgos.lua!)
+DBM_KAL_SPELLIDS_WM				= { -- DO NOT TRANSLATE
 	[44978] = "Heal",	-- Healing done by spells and effects increased by 100%.
 	[45001] = "Cast",	-- Casting time increased by 100%.
 	[45002] = "Hit",	-- Chance to hit with melee and ranged attacks reduced by 50%.
@@ -123,7 +123,6 @@ DBM_TWINS_OPTION_CONFLAG		= "Conflagration: Announce"
 DBM_TWINS_OPTION_CONFLAG2		= "Conflagration: Whisper"
 DBM_TWINS_OPTION_CONFLAG3		= "Conflagration: Special Warning"
 DBM_TWINS_OPTION_CONFLAG4		= "Conflagration: Icon"
-DBM_TWINS_OPTION_CONFLAG5		= "Conflagration: Sound"
 DBM_TWINS_OPTION_NOVA			= "Shadow Nova: Announce"
 DBM_TWINS_OPTION_NOVA2			= "Shadow Nova: Whisper"
 DBM_TWINS_OPTION_NOVA3			= "Shadow Nova: Special Warning"

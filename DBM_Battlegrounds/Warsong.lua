@@ -1,5 +1,5 @@
-ï»¿-- 8/1/2007: Set name color of flag carrier to his class color by Diablohu.
--- 31/7/2007 2.1: The function that targeting the flag carrier finally completed by Diablohu. Special thanks to Ð¡Ð°Â°Ð§Ð¢Ð’.
+-- 8/1/2007: Set name color of flag carrier to his class color by Diablohu.
+-- 31/7/2007 2.1: The function that targeting the flag carrier finally completed by Diablohu. Special thanks to Ñà°×ÒÂ.
 
 local Warsong = DBM:NewBossMod("Warsong", DBM_WARSONG, DBM_BGMOD_LANG["WS_DESCRIPTION"], DBM_OTHER, "Battlegrounds", 5);
 
@@ -181,7 +181,7 @@ function Warsong:OnEvent()
 			if string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_PICKUP) then
 				local _, _, sArg1, sArg2 =  string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_PICKUP);
 				local mSide, mNick;
-				if( GetLocale() == "deDE") then
+				if( GetLocale() == "deDE" ) then
 					mSide = sArg2; mNick = sArg1;
 				else
 					mSide = sArg1; mNick = sArg2;
@@ -214,12 +214,7 @@ function Warsong:OnEvent()
 				end
 				
 			elseif string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_RETURN) then
-				if( GetLocale() == "ruRU") then
-					local _, _, mNick, mSide =  string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_RETURN);
-				else
-					local _, _, mSide, mNick =  string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_RETURN);
-				end
-				
+				local _, _, mSide, mNick =  string.find(arg1, DBM_BGMOD_LANG.WSG_FLAG_RETURN);
 				if mSide == DBM_BGMOD_LANG.ALLIANCE then
 					self.FlagCarrierFrame2:Hide();
 					DBM.AddOns.Warsong.FlagCarrier[2] = nil;

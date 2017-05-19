@@ -94,7 +94,7 @@ DBM_MALACRASS_WARN_BOLTS_SOON		= "5秒後 靈魂箭"
 DBM_SBT["Next Spirit Bolts"] 		= "下一次靈魂箭";
 DBM_SBT["Spirit Bolts"] 		= "靈魂箭";
 DBM_SBT["Malacrass"] = {
-	{"Siphon Soul: (.*)","虹吸靈魂: %1"},
+	[1] = {"Siphon Soul: (.*)","虹吸靈魂: %1"},
 }; 
 
 -- Zul'jin

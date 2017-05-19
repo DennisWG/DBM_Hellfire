@@ -18,7 +18,7 @@ Mag:AddOption("WarnNova", true, DBM_MAG_OPTION_3);
 
 Mag:AddBarOption("Phase 2")
 Mag:AddBarOption("Heal")
-Mag:AddBarOption("Blast Nova")
+Mag:AddBarOption("Possible Blast Nova")
 
 function Mag:OnCombatStart(delay)
 	self:StartStatusBarTimer(120 - delay, "Phase 2", "Interface\\Icons\\INV_Weapon_Halberd16");
@@ -42,7 +42,7 @@ function Mag:OnEvent(event, arg1)
 	elseif event == "CHAT_MSG_MONSTER_YELL" then
 		if arg1 and string.find(arg1, DBM_MAG_YELL_PHASE2) then -- to support stupid german localization :(
 			self:Announce(DBM_MAG_WARN_P2, 3);
-			self:StartStatusBarTimer(54, "Blast Nova", "Interface\\Icons\\Spell_Fire_SealOfFire");
+			self:StartStatusBarTimer(50, "Possible Blast Nova", "Interface\\Icons\\Spell_Fire_SealOfFire");
 			self:ScheduleSelf(48, "NovaWarn");
 		end
 	elseif event == "CHAT_MSG_RAID_BOSS_EMOTE" then
@@ -50,7 +50,7 @@ function Mag:OnEvent(event, arg1)
 			if self.Options.WarnNova then
 				self:Announce(DBM_MAG_WARN_NOVA_NOW, 3)
 			end
-			self:StartStatusBarTimer(54, "Blast Nova", "Interface\\Icons\\Spell_Fire_SealOfFire");
+			self:StartStatusBarTimer(50, "Possible Blast Nova", "Interface\\Icons\\Spell_Fire_SealOfFire");
 			self:ScheduleSelf(48, "NovaWarn");
 		end
 	elseif event == "Phase2Warn" and arg1 then

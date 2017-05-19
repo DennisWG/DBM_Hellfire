@@ -19,6 +19,23 @@ DBM_MAULGAR_WARN_WHIRLWIND	= "*** Whirlwind ***";
 DBM_MAULGAR_WARN_WW_SOON	= "*** Whirlwind soon ***";
 DBM_MAULGAR_WARN_FELHUNTER	= "*** Felhunter ***";
 
+DBM_MAULGAR_GPWS			= "Blindeye the Seer gains Greater Power Word: Shield.";
+DBM_MAULGAR_SPELLSHIELD		= "Krosh Firehand gains Spell Shield.";
+
+DBM_MAULGAR_POH				= "Blindeye the Seer begins to cast Prayer of Healing.";
+DBM_MAULGAR_HEAL			= "Blindeye the Seer begins to cast Heal.";
+DBM_MAULGAR_FELHUNTER		= "Olm the Summoner casts Summon Wild Felhunter.";
+DBM_MAULGAR_SHIELD_STOLEN	= "([^%s]+) gains Spell Shield%.";
+DBM_MAULGAR_SHIELD_STOLEN2	= "You gain Spell Shield.";
+
+DBM_MAULGAR_WHIRLWIND		= "High King Maulgar gains Whirlwind.";
+DBM_MAULGAR_ARCING_SMASH	= "High King Maulgar%s?'s Arcing Smash";
+DBM_MAULGAR_SMASH_HIT		= "High King Maulgar%s?'s Arcing Smash hits ([^%s]+) for (%d+).(.*)";
+DBM_MAULGAR_SMASH_MISS		= "High King Maulgar%s?'s Arcing Smash.+ (%w+) by ([^%s]+).";
+DBM_MAULGAR_SMASH_YOU_HIT	= "High King Maulgar%s?'s Arcing Smash hits you for (%d+).(.*)";
+DBM_MAULGAR_SMASH_YOU_MISS	= "High King Maulgar%s?'s Arcing Smash misses you.";
+DBM_MAULGAR_SMASH_YOU_DODGE	= "High King Maulgar%s?'s Arcing Smash was dodged.";
+DBM_MAULGAR_SMASH_YOU_PARRY	= "High King Maulgar%s?'s Arcing Smash was parried.";
 
 DBM_MAULGAR_DODGED	= "dodged";
 DBM_MAULGAR_PARRIED	= "parried";
@@ -39,6 +56,9 @@ DBM_GRUUL_OPTION_GROWBAR	= "Grow"
 DBM_GRUUL_SAY_PULL			= "Come.... and die."
 DBM_GRUUL_GROW_EMOTE		= "%s grows in size!";
 DBM_GRUUL_EMOTE_SHATTER		= "%s roars!";
+DBM_GRUUL_CAVE_IN_YOU		= "You are afflicted by Cave In.";
+DBM_GRUUL_SHATTER_CAST		= "Gruul the Dragonkiller begins to cast Shatter.";
+DBM_GRUUL_SLAM_CAST			= "Gruul the Dragonkiller begins to cast Ground Slam.";
 DBM_GRUUL_SILENCE			= "Reverberation";
 
 DBM_GRUUL_GROW_ANNOUNCE		= "*** Grow #%s ***";
@@ -60,6 +80,9 @@ DBM_KAZZAK_OPTION_3			= "Announce Mark of Kazzak";
 DBM_KAZZAK_OPTION_4			= "Set icon";
 DBM_KAZZAK_OPTION_5			= "Send whisper";
 
+
+DBM_KAZZAK_TWISTED			= "([^%s]+) (%w+) afflicted by Twisted Reflection%.";
+DBM_KAZZAK_MARK				= "([^%s]+) (%w+) afflicted by Mark of Kazzak%.";
 DBM_KAZZAK_YELL_PULL		= "All mortals will perish!";
 DBM_KAZZAK_YELL_PULL2		= "The Legion will conquer all!";
 DBM_KAZZAK_EMOTE_ENRAGE		= "%s becomes enraged!";
@@ -81,6 +104,8 @@ DBM_MAG_OPTION_3		= "Announce Blast Nova";
 DBM_MAG_EMOTE_PULL		= "%s's bonds begin to weaken!";
 DBM_MAG_YELL_PHASE2		= "I... am... unleashed!"
 DBM_MAG_EMOTE_NOVA		= "%s begins to cast Blast Nova!";
+DBM_MAG_CAST_INFERNAL	= "Hellfire Channeler casts Burning Abyssal.";
+DBM_MAG_CAST_HEAL		= "Hellfire Channeler begins to cast Dark Mending.";
 
 DBM_MAG_PHASE2_WARN		= "*** Phase 2 in %s sec ***";
 DBM_MAG_WARN_P2			= "*** Magtheridon is free ***";
@@ -98,7 +123,10 @@ DBM_DOOMW_OPTION_1		= "Show range check frame";
 DBM_DOOMW_OPTION_2		= "Announce Earthquake";
 DBM_DOOMW_OPTION_3		= "Announce Overrun";
 
+DBM_DOOMW_CAST_QUAKE	= "afflicted by Earthquake";
+DBM_DOOMW_CAST_CHARGE	= "Doomwalker begins to cast Overrun.";
 DBM_DOOMW_EMOTE_ENRAGE	= "%s becomes enraged!";
+
 
 DBM_DOOMW_QUAKE_WARN	= "*** Earthquake ***";
 DBM_DOOMW_QUAKE_SOON	= "*** Earthquake soon ***";

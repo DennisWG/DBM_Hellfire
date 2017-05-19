@@ -13,8 +13,6 @@ localization.de.lua
 localization.fr.lua
 localization.cn.lua
 localization.tw.lua
-localization.es.lua
-localization.ru.lua
 Patchnotes.lua
 API.lua
 API.xml

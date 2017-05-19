@@ -12,6 +12,7 @@ DBM_NALO_OPTION_SILENCE			= "Announce Silence"
 DBM_NALO_YELL_PULL				= "You be dead soon enough!"
 DBM_NALO_YELL_BEAR				= "You call on da beast, you gonna get more dan you bargain for!"
 DBM_NALO_YELL_NORMAL			= "Make way for Nalorakk!"
+DBM_NALO_DEBUFF_SILENCE			= "afflicted by Deafening Roar"
 DBM_NALO_SPELLID_SILENCE		= 42398
 
 DBM_NALO_WARN_NORMAL_SOON		= "Normal Form in 5 sec"
@@ -26,6 +27,7 @@ DBM_AKIL_DESCRIPTION			= "Announces Electrical Storm and pings on the minimap."
 DBM_AKIL_OPTION_RANGE			= "Show range check frame"
 
 DBM_AKIL_YELL_PULL				= "I be da predator! You da prey..."
+DBM_AKIL_DEBUFF_STORM			= "([^%s]+) (%w+) afflicted by Electrical Storm%."
 DBM_AKIL_SPELLID_STORM			= 43648
 
 DBM_AKIL_WARN_STORM_SOON		= "Electrical Storm soon"
@@ -55,6 +57,8 @@ DBM_HALAZZI_OPTION_TOTEM		= "Announce Lightning Totem"
 DBM_HALAZZI_YELL_PULL			= "Get on ya knees and bow.... to da fang and claw!"
 DBM_HALAZZI_YELL_SPIRIT			= "I fight wit' untamed spirit...."
 DBM_HALAZZI_YELL_SPIRIT_DESP	= "Spirit, come back to me!"
+DBM_HALAZZI_CAST_TOTEM			= "Halazzi  begins to cast Lightning Totem." -- 2 spaces? wtf?
+DBM_HALAZZI_GAIN_FRENZY			= "Halazzi gains Frenzy."
 DBM_HALAZZI_SPELL_FRENZY		= "Frenzy"
 DBM_HALAZZI_SPELLID_TOTEM		= 43302
 
@@ -73,6 +77,7 @@ DBM_MALACRASS_DESCRIPTION		= "Announces Siphon Soul and Spirit Bolts."
 DBM_MALACRASS_OPTION_MC			= "Announce Mind Control"
 
 DBM_MALACRASS_YELL_PULL			= "Da shadow gonna fall on you...."
+DBM_MALACRASS_DEBUFF_SIPHON		= "([^%s]+) (%w+) afflicted by Siphon Soul"
 DBM_MALACRASS_YELL_BOLTS		= "Your soul gonna bleed!"
 DBM_MALACRASS_SPELLID_SIPHON	= 43501
 
@@ -95,6 +100,9 @@ DBM_ZULJIN_YELL_PHASE_3			= "Dere be no hidin' from da eagle!"
 DBM_ZULJIN_YELL_PHASE_4			= "Let me introduce you to me new bruddas: fang and claw!"
 DBM_ZULJIN_YELL_PHASE_5			= "Ya don' have to look to da sky to see da dragonhawk!"
 
+DBM_ZULJIN_DEBUFF_PARALYSIS		= "afflicted by Creeping Paralysis"
+DBM_ZULJIN_DEBUFF_LYNX			= "([^%s]+) (%w+) afflicted by Claw Rage%.$"
+DBM_ZULJIN_DEBUFF_DOT			= "([^%s]+) (%w+) afflicted by Grievous Throw"
 DBM_ZULJIN_SPELLID_PARALYSIS	= 43095
 DBM_ZULJIN_SPELLID_LYNX			= 43150
 DBM_ZULJIN_SPELLID_DOT			= 43093

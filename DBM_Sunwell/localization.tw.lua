@@ -2,7 +2,7 @@
 
 --   Deadly Boss Mods - Chinese localization   --
 --    by kc10577 Nightkiller@日落沼澤          --
---                  05-Aug-08                  --
+--                  3-Jun-08                   --
 
 DBM_SW_TAB				= "SunwellTab"
 DBM_SUNWELL				= "太陽之井高地"
@@ -154,7 +154,6 @@ DBM_TWINS_OPTION_CONFLAG		= "燃燒: 提示"
 DBM_TWINS_OPTION_CONFLAG2		= "燃燒: 密語提示"
 DBM_TWINS_OPTION_CONFLAG3		= "燃燒: 特別警告"
 DBM_TWINS_OPTION_CONFLAG4		= "燃燒: 標記"
-DBM_TWINS_OPTION_CONFLAG5		= "燃燒: 聲音"
 DBM_TWINS_OPTION_NOVA			= "暗影新星: 提示"
 DBM_TWINS_OPTION_NOVA2			= "暗影新星: 密語提示"
 DBM_TWINS_OPTION_NOVA3			= "暗影新星: 特別警告"
@@ -216,14 +215,13 @@ DBM_MURU_WARN_P2			= "第二階段"
 DBM_SBT["Enrage"]			= "狂怒";
 DBM_SBT["Humanoids"]			= "人型生物";
 DBM_SBT["Void Sentinel"]		= "虛無哨兵";
+DBM_SBT["Next Darkness"]		= "下一次黑暗";
 DBM_SBT["Next Black Hole"]		= "下一次黑洞";
-DBM_SBT["Muru"] = {
-	{"Next Darkness", "下一次黑暗"},
-}
 
 -- Kil'jaeden
 DBM_KIL_NAME				= "基爾加丹"
-DBM_KIL_DESCRIPTION			= "提示盾之寶珠, 千魂之暗, 藍龍之盾, 邪惡倒影, 燃焰之矢, 龍類寶珠和火焰之花"
+DBM_KIL_DESCRIPTION			= "支持第一階段及第二階段"
+DBM_KIL_DESCRIPTION			= "提示盾之寶珠, 黑暗, 藍龍之盾, 邪惡倒影, 烈焰之刺, 龍類寶珠和火焰之花"
 
 DBM_KIL_OPTION_RANGE			= "顯示距離框"
 DBM_KIL_OPTION_SHIELD			= "提示藍龍之盾"
@@ -234,7 +232,7 @@ DBM_KIL_OPTION_FIREWHISP		= "發送密語給火焰之花的目標"
 DBM_KIL_OPTION_FIREICON			= "標記火焰之花目標"
 DBM_KIL_OPTION_SHOWFRAME		= "顯示火焰之花目標列表"
 DBM_KIL_OPTION_WARNREFL			= "提示邪惡倒影"
-DBM_KIL_OPTION_DARTS			= "提示燃焰之矢"
+DBM_KIL_OPTION_DARTS			= "提示烈焰之刺"
 DBM_KIL_OPTION_DRAGONORB		= "提示龍類寶珠"
 
 DBM_KIL_YELL_PULL			= "該犧牲的都已經結束了，就任他們去吧!現在我將完成薩格拉斯都辦不到的事!我要搾乾這個悲慘的世界，並確保我成為燃燒軍團的真正主人!末日已經到來!讓這個世界開始毀滅吧!"
@@ -246,8 +244,8 @@ DBM_KIL_WARN_PHASE2			= "第三階段"
 DBM_KIL_WARN_PHASE3			= "第四階段 - 隕石"
 DBM_KIL_WARN_PHASE4			= "第五階段 - 狂暴"
 DBM_KIL_WARN_SHIELD			= "藍龍之盾"
-DBM_KIL_WARN_DARKNESS			= "千魂之暗"
-DBM_KIL_WARN_DARKNESS_SOON		= "即將發動 千魂之暗"
+DBM_KIL_WARN_DARKNESS			= "黑暗"
+DBM_KIL_WARN_DARKNESS_SOON		= "即將發動 黑暗"
 DBM_KIL_WARN_ORB			= "盾之寶珠-群體暗影箭 出現"
 DBM_KIL_WARN_ORBS			= "多粒盾之寶珠-群體暗影箭 出現了"
 --DBM_KIL_WARN_FIRE			= "火焰之花 即將出現"
@@ -256,8 +254,8 @@ DBM_KIL_WARN_DARKNESS_NOW		= "千魂之暗"
 DBM_KIL_WARN_REFLECTIONS		= "邪惡倒影"
 DBM_KIL_WARN_FIRE_SAY			= "火焰之花在我身上!"
 DBM_KIL_WARN_FIRE_WHISPER		= "火焰之花在你身上!"
-DBM_KIL_WARN_DARTS_SOON			= "5秒後 燃焰之矢"
-DBM_KIL_WARN_DARTS			= "燃焰之矢"
+DBM_KIL_WARN_DARTS_SOON			= "5秒後 烈焰之刺"
+DBM_KIL_WARN_DARTS			= "烈焰之刺"
 DBM_KIL_WARN_DRAGORB_SOON		= "5秒後 藍龍寶珠"
 DBM_KIL_WARN_DRAGORB_NOW		= "龍類寶珠 出現了"
 
@@ -269,11 +267,8 @@ DBM_KIL_FRAME_UPWARDS2			= DBM_KAL_FRAME_UPWARDS2
 DBM_KIL_FRAME_HIDE			= DBM_KAL_FRAME_HIDE
 
 DBM_SBT["Fire Bloom CD"]		= "火焰之花冷卻";
-DBM_SBT["Flame Darts"]			= "燃焰之矢";
-DBM_SBT["Darkness"]			= "千魂之暗";
+DBM_SBT["Next Darkness"]		= "下一次黑暗";
+DBM_SBT["Flame Darts"]			= "烈焰之刺";
+DBM_SBT["Darkness"]			= "黑暗";
 DBM_SBT["Dragon Orb"]			= "龍類寶珠";
-DBM_SBT["Kil"] = {
-	{"Next Darkness", "下一次 千魂之暗"},
-}
-
 end

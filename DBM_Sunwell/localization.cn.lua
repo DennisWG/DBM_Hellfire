@@ -2,7 +2,7 @@
 --   Deadly Boss Mods - Chinese localization   --
 --    by Diablohu<白银之手> @ 二区-轻风之语    --
 --              www.dreamgen.cn                --
---                    7/6/2008                 --
+--                    6/4/2008                 --
 -- ------------------------------------------- --
 
 if (GetLocale() == "zhCN") then
@@ -154,7 +154,7 @@ DBM_SUNWELL						= "太阳之井高地"
 
 -- Eredar Twins
 	DBM_TWINS_NAME					= "艾瑞达双子"
-	DBM_TWINS_DESCRIPTION			= "警报暗影之刃, 暗影新星, 混乱重击, 高热和燃烧"
+	DBM_TWINS_DESCRIPTION			= "|cff999999翻译不完全|r 警报暗影之刃, 暗影新星, 混乱重击, 高热和燃烧"
 	DBM_TWINS_OPTION_BLADES			= "警报暗影之刃"
 	DBM_TWINS_OPTION_BUFF			= "警报高热"
 	DBM_TWINS_OPTION_BLOW			= "警报混乱重击"
@@ -163,7 +163,6 @@ DBM_SUNWELL						= "太阳之井高地"
 	DBM_TWINS_OPTION_CONFLAG2		= "燃烧: 密语目标"
 	DBM_TWINS_OPTION_CONFLAG3		= "燃烧: 特殊警报"
 	DBM_TWINS_OPTION_CONFLAG4		= "燃烧: 添加标记"
-	DBM_TWINS_OPTION_CONFLAG5		= "燃烧: 声音警报"
 	DBM_TWINS_OPTION_NOVA			= "暗影新星: 警报"
 	DBM_TWINS_OPTION_NOVA2			= "暗影新星: 密语目标"
 	DBM_TWINS_OPTION_NOVA3			= "暗影新星: 特殊警报"
@@ -173,8 +172,8 @@ DBM_SUNWELL						= "太阳之井高地"
 
 	DBM_TWINS_MOB_WL				= "高阶术士奥蕾塞丝"
 	DBM_TWINS_MOB_SOCR				= "萨洛拉斯女王"
-	DBM_TWINS_EMOTE_CONFLAG			= "奥蕾塞丝向([^%s]+)施放燃烧。"
-	DBM_TWINS_EMOTE_NOVA			= "萨洛拉丝向([^%s]+)施放暗影新星。"
+	DBM_TWINS_EMOTE_CONFLAG			= "奥蕾塞丝对([^%s]+)施放燃烧"
+	DBM_TWINS_EMOTE_NOVA			= "萨洛拉丝对([^%s]+)施放暗影新星"
 
 	DBM_TWINS_WARN_BLADES			= "暗影之刃"
 	DBM_TWINS_WARN_NOVA_ON			= "暗影新星 -> >%s<"
@@ -188,12 +187,11 @@ DBM_SUNWELL						= "太阳之井高地"
 	DBM_TWINS_SPECWARN_SHADOW		= "黑暗触摸: %d"
 	DBM_TWINS_SPECWARN_FIRE			= "烈焰触摸: %d"
 
-	DBM_SBT["Shadow Blades"]			= "暗影之刃";
-	DBM_SBT["Next Shadow Blades"]		= "下一次暗影之刃";
-	DBM_SBT["Next Shadow Nova"]			= "下一次暗影新星";
-	DBM_SBT["Shadow Nova"]				= "暗影新星";
-	DBM_SBT["Confounding Blow"]			= "混乱重击";
-	DBM_SBT["Next Confounding Blow"]	= "下一次混乱重击";
+	DBM_SBT["Shadow Blades"]		= "暗影之刃";
+	DBM_SBT["Next Shadow Blades"]	= "下一次暗影之刃";
+	DBM_SBT["Next Shadow Nova"]		= "下一次暗影新星";
+	DBM_SBT["Shadow Nova"]			= "暗影新星";
+	DBM_SBT["Confounding Blow"]		= "混乱重击";
 
 
 -- M'uru

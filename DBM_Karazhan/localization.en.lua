@@ -14,6 +14,7 @@ DBM_ATH_WARN_CURSE		= "*** Curse ***";
 DBM_ATH_CURSE_SOON		= "*** Curse soon ***";
 
 DBM_ATH_MIDNIGHT		= "Midnight";
+DBM_ATH_CURSE			= "afflicted by Intangible Presence";
 DBM_ATH_YELL_1			= "Come Midnight, let's disperse this petty rabble!";
 
 
@@ -31,7 +32,9 @@ DBM_MOROES_VANISH_SOON	= "*** Vanish in 5 sec ***";
 DBM_MOROES_GARROTE_WARN	= "*** Garrote on >%s< ***";
 
 DBM_MOROES_YELL_START	= "Hm, unannounced visitors. Preparations must be made...";
-
+DBM_MOROES_VANISH_GAIN	= "Moroes gains Vanish.";
+DBM_MOROES_VANISH_FADES	= "Vanish fades from Moroes.";
+DBM_MOROES_GARROTE		= "([^%s]+) (%w+) afflicted by Garrote%.";
 
 
 
@@ -42,11 +45,13 @@ DBM_MOV_OPTION_1		= "Show range check frame";
 DBM_MOV_OPTION_2		= "Announce Holy Fire";
 
 DBM_MOV_YELL_PULL		= "Your behavior will not be tolerated.";
+DBM_MOV_REPENTANCE		= "is afflicted by Repentance";
 DBM_MOV_YELL_REP_1		= "Cast out your corrupt thoughts.";
 DBM_MOV_YELL_REP_2		= "Your impurity must be cleansed.";
 DBM_MOV_WARN_REP		= "*** Repentance ***";
 DBM_MOV_WARN_REP_SOON	= "*** Repentance soon ***";
 
+DBM_MOV_DEBUFF_HOLYFIRE	= "([^%s]+) (%w+) afflicted by Holy Fire.";
 DBM_MOV_WARN_HOLYFIRE	= "*** Holy Fire on >%s< ***";
 
 
@@ -64,8 +69,11 @@ DBM_RJ_POISON_WARN		= "Poisoned Thrust on >%s<";
 
 DBM_RJ_ROMULO			= "Romulo";
 DBM_RJ_JULIANNE			= "Julianne";
+DBM_RJ_GAIN_DARING		= "Romulo gains Daring.";
+DBM_RJ_GAIN_DEVOTION 	= "Julianne gains Devotion.";
+DBM_RJ_CAST_HEAL		= "Julianne begins to cast Eternal Affection.";
 DBM_RJ_PHASE2_YELL		= "Come, gentle night; and give me back my Romulo!";
-
+DBM_RJ_POISON			= "([^%s]+) (%w+) afflicted by Poisoned Thrust.";
 
 -- Big Bad Wolf
 DBM_BBW_NAME			= "The Big Bad Wolf";
@@ -74,6 +82,9 @@ DBM_BBW_OPTION_1		= "Announce fear";
 DBM_BBW_OPTION_2		= "Send whisper";
 
 DBM_BBW_YELL_1			= "The better to own you with!";
+DBM_BBW_GAIN_DEBUFF		= "(.+) gains Red Riding Hood.";
+DBM_BBW_AFFLICTED_DEBUFF= "([^%s]+) (%w+) afflicted by Red Riding Hood";
+DBM_BBW_YOU_GAIN		= "You gain Red Riding Hood."
 DBM_BBW_FEAR_EXP		= "Terrifying Howl";
 
 DBM_BBW_FEAR_WARN		= "*** Fear ***";
@@ -136,6 +147,9 @@ DBM_NS_OPTION_2			= "Show 5 second warning for phases";
 DBM_NS_OPTION_3			= "Announce Void Zones";
 DBM_NS_OPTION_4			= "Announce Netherbreath";
 
+DBM_NS_CAST_MODE_SWAP	= "Netherspite casts Mode Swap.";
+DBM_NS_CAST_VOID_ZONE	= "Netherspite casts Void Zone.";
+DBM_NS_CAST_BREATH		= "Netherspite begins to cast Netherbreath.";
 DBM_NS_EMOTE_PHASE_2	= "%s goes into a nether-fed rage!";
 DBM_NS_EMOTE_PHASE_1	= "%s cries out in withdrawal, opening gates to the nether.";
 
@@ -161,6 +175,11 @@ DBM_PRINCE_YELL_P2		= "Simple fools! Time is the fire in which you'll burn!";
 DBM_PRINCE_YELL_P3		= "How can you hope to stand against such overwhelming power?";
 DBM_PRINCE_YELL_INF1	= "All realities, all dimensions are open to me!";
 DBM_PRINCE_YELL_INF2	= "You face not Malchezaar alone, but the legions I command!";
+DBM_PRINCE_SWP			= "([^%s]+) (%w+) afflicted by Shadow Word: Pain";
+DBM_PRINCE_ENFEEBLE		= "([^%s]+) (%w+) afflicted by Enfeeble.";
+DBM_PRINCE_CAST_NOVA	= "Prince Malchezaar begins to cast Shadow Nova.";
+DBM_PRINCE_INF_SPAWN	= "Infernal gains Hellfire";
+
 
 DBM_PRINCE_WARN_NOVA		= "*** Shadow Nova in 2 sec ***";
 DBM_PRINCE_WARN_ENFEEBLE	= "*** Enfeeble ***";
@@ -185,6 +204,11 @@ DBM_NB_YELL_PULL		= "What fools! I shall bring a quick end to your suffering!";
 DBM_NB_YELL_AIR			= "Miserable vermin. I shall exterminate you from the air!";
 DBM_NB_YELL_GROUND		= "Enough! I shall land and crush you myself!";
 DBM_NB_YELL_GROUND2		= "Insects! Let me show you my strength up close!";
+DBM_NB_CAST_FEAR		= "Nightbane begins to cast Bellowing Roar.";
+DBM_NB_EARTH_YOU		= "You are afflicted by Charred Earth.";
+DBM_NB_CAST_BONES		= "([^%s]+) (%w+) afflicted by Rain of Bones%.";
+DBM_NB_CAST_ASH			= "([^%s]+) (%w+) afflicted by Distracting Ash.";
+DBM_NB_CAST_SMOKE		= "([^%s]+) (%w+) afflicted by Searing Cinders%.";
 
 DBM_NB_FEAR_WARN		= "*** Fear ***";
 DBM_NB_FEAR_SOON_WARN	= "*** Fear soon ***";
@@ -209,6 +233,7 @@ DBM_OZ_YELL_STRAWMAN	= "Now what should I do with you? I simply can't make up my
 DBM_OZ_YELL_TINHEAD		= "I could really use a heart. Say, can I have yours?";
 DBM_OZ_YELL_TITO		= "Don't let them hurt us Tito! Oh, you won't, will you?";
 DBM_OZ_YELL_CRONE		= "Woe to each and every one of you, my pretties!";
+DBM_OZ_SUMMON_TITO		= "Dorothee begins to cast Summon Tito.";
 
 DBM_OZ_WARN_TITO		= "*** Tito ***";
 DBM_OZ_WARN_ROAR		= "*** Roar ***";

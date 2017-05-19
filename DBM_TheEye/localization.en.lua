@@ -33,6 +33,8 @@ DBM_SOLARIAN_OPTION_WARN_PHASE			= "Announce adds";
 DBM_SOLARIAN_OPTION_WHISPER_WRATH		= "Send whisper to Wrath targets"
 DBM_SOLARIAN_OPTION_SOUND				= "Play sound when you are afflicted by Wrath"
 
+DBM_SOLARIAN_DEBUFF_WRATH				= "([^%s]+) (%w+) afflicted by Wrath of the Astromancer%."
+DBM_SOLARIAN_CAST_SPLIT					= "High Astromancer Solarian casts Astromancer Split.";
 DBM_SOLARIAN_YELL_ENRAGE				= "Enough of this!%s*Now I call upon the fury of the cosmos itself."
 
 DBM_SOLARIAN_SPECWARN_WRATH				= "Wrath on you!";
@@ -50,7 +52,11 @@ DBM_ALAR_DESCRIPTION					= "Shows timers and warnings for Al'ar.";
 DBM_ALAR_OPTION_MELTARMOR				= "Announce Melt Armor";
 DBM_ALAR_OPTION_METEOR					= "Announce Meteor";
 
+DBM_ALAR_CAST_REBIRTH					= "Al'ar begins to cast Rebirth.";
+DBM_ALAR_DEBUFF_MELTARMOR				= "([^%s]+) (%w+) afflicted by Melt Armor%.";
+DBM_ALAR_DEBUFF_FIRE_YOU				= "You are afflicted by Flame Patch.";
 DBM_ALAR_FLAME_BUFFET					= "Flame Buffet";
+
 
 DBM_ALAR_WARN_MELTARMOR					= "*** Melt Armor on >%s< ***";
 DBM_ALAR_WARN_REBIRTH					= "*** Phase 2 ***";
@@ -89,6 +95,11 @@ DBM_KAEL_EMOTE_THALADRED_TARGET			= "sets eyes on ([^%s]+)!";
 DBM_KAEL_YELL_PHASE1_SANGUINAR			= "You have persevered against some of my best advisors... but none can withstand the might of the Blood Hammer. Behold, Lord Sanguinar!";
 DBM_KAEL_YELL_PHASE1_CAPERNIAN			= "Capernian will see to it that your stay here is a short one.";
 DBM_KAEL_YELL_PHASE1_TELONICUS			= "Well done, you have proven worthy to test your skills against my master engineer, Telonicus.";
+DBM_KAEL_CAST_FEAR						= "Lord Sanguinar begins to cast Bellowing Roar.";
+DBM_KAEL_DEBUFF_FEAR1					= "afflicted by Bellowing Roar";
+DBM_KAEL_DEBUFF_FEAR2					= "Lord Sanguinar%s?'s Bellowing Roar";
+DBM_KAEL_DEBUFF_CONFLAGRATION			= "([^%s]+) (%w+) afflicted by Conflagration%.";
+DBM_KAEL_DEBUFF_REMOTETOY				= "([^%s]+) (%w+) afflicted by Remote Toy%.";
 DBM_KAEL_YELL_THALA_DOWN				= "Forgive me, my prince! I have... failed.";
 DBM_KAEL_YELL_CAPERNIAN_DOWN			= "This is not over!";
 
@@ -136,6 +147,13 @@ DBM_KAEL_INFOFRAME_ADDS_TITLE			= "Advisors";
 
 DBM_KAEL_CAST_PHOENIX_REBIRTH			= "Phoenix begins to cast Rebirth.";
 DBM_KAEL_EMOTE_PYROBLAST				= "begins to cast Pyroblast";
+DBM_KAEL_CAST_PYROBLAST					= "Kael'thas Sunstrider begins to cast Pyroblast.";
+DBM_KAEL_GAIN_SHOCK_BARRIER				= "Kael'thas Sunstrider gains Shock Barrier.";
+DBM_KAEL_FADE_SHOCK_BARRIER				= "Shock Barrier fades from Kael'thas Sunstrider.";
+DBM_KAEL_CAST_PHOENIX					= "Kael'thas Sunstrider casts Phoenix.";
+DBM_KAEL_DEBUFF_MINDCONTROL				= "([^%s]+) (%w+) afflicted by Mind Control%.";
+DBM_KAEL_FADE_MINDCONTROL				= "([^%s]+)%s?'s Mind Control is removed";
+DBM_KAEL_FADE_MINDCONTROL_YOU			= "Your Mind Control is removed";
 DBM_KAEL_EGG							= "Phoenix Egg";
 DBM_KAEL_YELL_GRAVITY_LAPSE				= "Having trouble staying grounded?";
 DBM_KAEL_YELL_GRAVITY_LAPSE2			= "Let us see how you fare when your world is turned upside down.";

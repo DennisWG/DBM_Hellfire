@@ -43,8 +43,8 @@ function Leotheras:OnCombatStart(delay)
 	self:ScheduleSelf(55, "PhaseWarn");
 	self:StartStatusBarTimer(60, "Demon Form", "Interface\\Icons\\Spell_Shadow_Metamorphosis");
 	
-	self:StartStatusBarTimer(18, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
-	self:ScheduleSelf(14, "WhirlWarn2");	
+	self:StartStatusBarTimer(15, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
+	self:ScheduleSelf(10, "WhirlWarn2");	
 end
 
 function Leotheras:OnEvent(event, arg1)
@@ -72,8 +72,8 @@ function Leotheras:OnEvent(event, arg1)
 			self:EndStatusBarTimer("Normal Form");
 			self:EndStatusBarTimer("Demon Form");
 			
-			self:StartStatusBarTimer(22.5, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
-			self:ScheduleSelf(18, "WhirlWarn2");
+			self:StartStatusBarTimer(15, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
+			self:ScheduleSelf(10, "WhirlWarn2");
 			
 		elseif string.find(arg1, DBM_LEO_YELL_WHISPER) then
 			if (GetTime() - self.DemonSpam) > 5 then
@@ -95,9 +95,9 @@ function Leotheras:OnEvent(event, arg1)
 		self:EndStatusBarTimer("Demon Form");
 		self:StartStatusBarTimer(45, "Demon Form", "Interface\\Icons\\Spell_Shadow_Metamorphosis");
 		
-		self:StartStatusBarTimer(19, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
+		self:StartStatusBarTimer(15, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
 		
-		self:ScheduleSelf(14, "WhirlWarn2");
+		self:ScheduleSelf(10, "WhirlWarn2");
 		
 	elseif event == "PhaseWarn" then
 		if self.Phase == "normal" then
@@ -168,8 +168,8 @@ function Leotheras:OnSync(msg)
 			self:Announce(DBM_LEO_WARN_WHIRL_FADED, 2);
 		end
 		if not self:GetStatusBarTimerTimeLeft("Demon Form") or self:GetStatusBarTimerTimeLeft("Demon Form") > 18 then
-			self:StartStatusBarTimer(20, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
-			self:ScheduleSelf(15, "WhirlWarn");
+			self:StartStatusBarTimer(15, "Next Whirlwind", "Interface\\Icons\\Ability_Whirlwind");
+			self:ScheduleSelf(10, "WhirlWarn");
 		end
 	elseif msg:sub(0, 5) == "Demon" then
 		msg = msg:sub(6);

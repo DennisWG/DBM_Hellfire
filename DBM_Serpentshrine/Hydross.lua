@@ -28,9 +28,9 @@ Hydross:AddBarOption("Mark of Hydross #(%d+)", true, DBM_HYDROSS_OPTION_FROST)
 function Hydross:OnCombatStart(delay)
 	self.Marks = 0;
 	self.Phase = "frost";
-	self:ScheduleSelf(11 - delay, "MarkWarning");
+	self:ScheduleSelf(10 - delay, "MarkWarning");
 	self:StartStatusBarTimer(600 - delay, "Enrage", "Interface\\Icons\\Spell_Shadow_UnholyFrenzy");
-	self:StartStatusBarTimer(16 - delay, "Mark of Hydross #"..(self.Marks + 1), "Interface\\Icons\\Spell_Frost_FrozenCore");
+	self:StartStatusBarTimer(15 - delay, "Mark of Hydross #"..(self.Marks + 1), "Interface\\Icons\\Spell_Frost_FrozenCore");
 	
 	if self.Options.RangeCheck then
 		DBM_Gui_DistanceFrame_Show();
@@ -163,8 +163,8 @@ function Hydross:OnEvent(event, arg1)
 			end
 			self.Marks = 0;
 			self.Phase = "nature";
-			self:ScheduleSelf(11, "MarkWarning");
-			self:StartStatusBarTimer(16, "Mark of Corruption #"..(self.Marks + 1), "Interface\\Icons\\Spell_Nature_ElementalShields");
+			self:ScheduleSelf(10, "MarkWarning");
+			self:StartStatusBarTimer(15, "Mark of Corruption #"..(self.Marks + 1), "Interface\\Icons\\Spell_Nature_ElementalShields");
 		elseif arg1 == DBM_HYDROSS_YELL_FROST then
 			self:UnScheduleSelf();
 			for i = 1, 7 do
@@ -177,8 +177,8 @@ function Hydross:OnEvent(event, arg1)
 			end
 			self.Marks = 0;
 			self.Phase = "frost";
-			self:ScheduleSelf(11, "MarkWarning");
-			self:StartStatusBarTimer(16, "Mark of Hydross #"..(self.Marks + 1), "Interface\\Icons\\Spell_Frost_FrozenCore");
+			self:ScheduleSelf(10, "MarkWarning");
+			self:StartStatusBarTimer(15, "Mark of Hydross #"..(self.Marks + 1), "Interface\\Icons\\Spell_Frost_FrozenCore");
 		end
 	end
 end

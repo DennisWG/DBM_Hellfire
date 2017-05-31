@@ -30,8 +30,8 @@ function Lurker:OnCombatStart(delay)
 	self:ScheduleSelf(75 - delay, "SubmergeWarning", 15);
 	self:ScheduleSelf(85 - delay, "SubmergeWarning", 5);
 	
-	self:StartStatusBarTimer(42 - delay, "Spout", "Interface\\Icons\\Spell_Frost_ChillingBlast");
-	self:ScheduleSelf(37 - delay, "SpoutWarning");
+	self:StartStatusBarTimer(15 - delay, "Spout", "Interface\\Icons\\Spell_Frost_ChillingBlast");
+	self:ScheduleSelf(10 - delay, "SpoutWarning");
 
 	self:StartStatusBarTimer(18 - delay, "Whirl", "Interface\\Icons\\Ability_Whirlwind");
 	self:ScheduleSelf(14 - delay, "WhirlWarning");
@@ -63,8 +63,8 @@ function Lurker:OnEvent(event, arg1)
 		self:Announce(DBM_LURKER_WARN_SPOUT_SOON, 2);
 		
 	elseif event == "NextSpout" then
-		self:StartStatusBarTimer(32, "Next Spout", "Interface\\Icons\\Spell_Frost_ChillingBlast");
-		self:ScheduleSelf(27, "SpoutWarning");
+		self:StartStatusBarTimer(35, "Next Spout", "Interface\\Icons\\Spell_Frost_ChillingBlast");
+		self:ScheduleSelf(30, "SpoutWarning");
 		
 	elseif event == "Submerge" then
 		self.Submerged = true;
